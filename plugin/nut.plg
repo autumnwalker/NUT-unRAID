@@ -18,8 +18,6 @@
 <CHANGES>
 ##&name;
 ###2022.09.27
-###2022.09.27
-###2022.09.27
 -update net-snmp package to net-snmp-5.9.3-x86_64-1_slack15.0.txz
 ###2022.03.20
 -fix for filetree top level
