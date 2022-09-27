@@ -3,7 +3,7 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name      "nut">
 <!ENTITY author    "autumnwalker">
-<!ENTITY version   "2022.09.27c">
+<!ENTITY version   "2022.09.27d">
 <!ENTITY launch    "Settings/NUTsettings">
 <!ENTITY gitURL    "https://raw.githubusercontent.com/&author;/NUT-unRAID/master">
 <!ENTITY pluginURL "&gitURL;/plugin/&name;.plg">
@@ -17,6 +17,8 @@
 
 <CHANGES>
 ##&name;
+###2022.09.27d
+- updated location of upsmon.pid in NUTsettings.page, nut_config.php, nut_footer.php, and nut_status.php.
 ###2022.09.27c
 - fixing code to update symlink.
 ###2022.09.27b

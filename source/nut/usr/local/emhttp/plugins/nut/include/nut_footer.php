@@ -14,7 +14,7 @@
 require_once '/usr/local/emhttp/plugins/nut/include/nut_config.php';
 
 //  exit if NUT daemon isn't working
-if (! file_exists('/var/run/nut/upsmon.pid')) {
+if (! file_exists('/var/run/upsmon.pid')) {
   echo " ";
   exit(0);
 }

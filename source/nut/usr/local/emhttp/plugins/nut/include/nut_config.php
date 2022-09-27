@@ -27,5 +27,5 @@ $nut_poll      = isset($nut_cfg['POLL'])         ? intval($nut_cfg ['POLL'])    
 $nut_community = isset($nut_cfg['COMMUNITY'])    ? htmlspecialchars($nut_cfg ['COMMUNITY']) : 'public';
 $nut_footer    = isset($nut_cfg['FOOTER'])       ? htmlspecialchars($nut_cfg ['FOOTER'])    : 'disable';
 $nut_runtime   = isset($nut_cfg['RUNTIME'])      ? htmlspecialchars($nut_cfg ['RUNTIME'])   : 'battery.runtime';
-$nut_running   = (intval(trim(shell_exec( "[ -f /proc/`cat /var/run/nut/upsmon.pid 2> /dev/null`/exe ] && echo 1 || echo 0 2> /dev/null" ))) === 1 );
+$nut_running   = (intval(trim(shell_exec( "[ -f /proc/`cat /var/run/upsmon.pid 2> /dev/null`/exe ] && echo 1 || echo 0 2> /dev/null" ))) === 1 );
 ?>
