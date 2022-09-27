@@ -19,15 +19,22 @@ chmod +0755 $DOCROOT/scripts/* \
 # copy the default
 cp -nr $DOCROOT/default.cfg $BOOT/nut.cfg
 
-# remove nut symlink and link to /etc/ups
+# remove nut symlink
 if [ -L /etc/nut ]; then
     rm -f /etc/nut
     mkdir /etc/nut
 fi
 
+# create /etc/nut if it does not exist
+if [ ! -d /etc/nut ]; then
+    mkdir /etc/nut
+fi
+
 # remove /etc/ups and create symlink
-rm -rf /etc/ups
-ln -s /etc/nut /etc/ups
+if [ -d /etc/ups ]; then
+    rm -rf /etc/ups
+    ln -s /etc/nut /etc/ups
+fi
 
 # copy conf files
 cp -nr $DOCROOT/nut/* /etc/nut
