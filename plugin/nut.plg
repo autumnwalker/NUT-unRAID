@@ -18,6 +18,7 @@
 <CHANGES>
 ##&name;
 ###2022.09.27c
+- fixing code to update symlink.
 ###2022.09.27b
 - updating symlinks for nut 2.8.0.
 ###2022.09.27a
