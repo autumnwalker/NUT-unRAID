@@ -3,7 +3,7 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name      "nut">
 <!ENTITY author    "autumnwalker">
-<!ENTITY version   "2022.09.27">
+<!ENTITY version   "2022.09.27a">
 <!ENTITY launch    "Settings/NUTsettings">
 <!ENTITY gitURL    "https://raw.githubusercontent.com/&author;/NUT-unRAID/master">
 <!ENTITY pluginURL "&gitURL;/plugin/&name;.plg">
@@ -17,6 +17,8 @@
 
 <CHANGES>
 ##&name;
+###2022.09.27a
+- update nut package to nut-2.8.0-x86_64-1gds.
 ###2022.09.27
 -update net-snmp package to net-snmp-5.9.3-x86_64-1_slack15.0.txz
 ###2022.03.20
@@ -153,9 +155,9 @@ dependency files
 <!--
 The 'nut-package' file.
 -->
-<FILE Name="&plgPATH;/nut-2.7.4.20200318-x86_64-1.txz" Min="6.8" Run="upgradepkg --install-new">
-<URL>&pkgURL;/nut-2.7.4.20200318-x86_64-1.txz</URL>
-<MD5>52de2867d6b8f6bc1a98a45870b05420</MD5>
+<FILE Name="&plgPATH;/nut-2.8.0-x86_64-1gds.txz" Min="6.8" Run="upgradepkg --install-new">
+<URL>&pkgURL;/nut-2.8.0-x86_64-1gds.txz</URL>
+<MD5>2c7a37ac49a3c752536b7f4f43777cc2</MD5>
 </FILE>
 
 <FILE Name="&plgPATH;/nut-2.7.4.20181125-x86_64-1.txz" Min="6.5" Max="6.7.99" Run="upgradepkg --install-new">
