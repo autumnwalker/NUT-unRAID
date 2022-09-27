@@ -22,10 +22,12 @@ cp -nr $DOCROOT/default.cfg $BOOT/nut.cfg
 # remove nut symlink and link to /etc/ups
 if [ -L /etc/nut ]; then
     rm -f /etc/nut
-    rm -rf /etc/ups
     mkdir /etc/nut
-    ln -s /etc/nut /etc/ups
 fi
+
+# remove /etc/ups and create symlink
+rm -rf /etc/ups
+ln -s /etc/nut /etc/ups
 
 # copy conf files
 cp -nr $DOCROOT/nut/* /etc/nut
