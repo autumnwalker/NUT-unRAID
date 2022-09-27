@@ -3,7 +3,7 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name      "nut">
 <!ENTITY author    "autumnwalker">
-<!ENTITY version   "2022.09.27e">
+<!ENTITY version   "2022.09.27f">
 <!ENTITY launch    "Settings/NUTsettings">
 <!ENTITY gitURL    "https://raw.githubusercontent.com/&author;/NUT-unRAID/master">
 <!ENTITY pluginURL "&gitURL;/plugin/&name;.plg">
@@ -17,6 +17,8 @@
 
 <CHANGES>
 ##&name;
+###2022.09.27f
+- fixing permissions for /var/run/nut.
 ###2022.09.27e
 - updated folder structure during install (/etc/nut and /etc/ups).
 ###2022.09.27d

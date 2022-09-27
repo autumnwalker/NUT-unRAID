@@ -211,8 +211,8 @@ write_config() {
         echo "Updating permissions..."
         chown root:nut /etc/nut/*
         chmod 640 /etc/nut/*
-        chown root:nut /var/run/nut
-        chmod 0770 /var/run/nut
+        #chown root:nut /var/run/nut
+        #chmod 0770 /var/run/nut
         #chown -R 218:218 /etc/nut
         #chmod -R 0644 /etc/nut
     fi
