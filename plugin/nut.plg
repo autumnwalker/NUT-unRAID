@@ -2,8 +2,8 @@
 
 <!DOCTYPE PLUGIN [
 <!ENTITY name      "nut">
-<!ENTITY author    "dmacias72">
-<!ENTITY version   "2022.03.20">
+<!ENTITY author    "autumnwalker">
+<!ENTITY version   "2022.09.27">
 <!ENTITY launch    "Settings/NUTsettings">
 <!ENTITY gitURL    "https://raw.githubusercontent.com/&author;/NUT-unRAID/master">
 <!ENTITY pluginURL "&gitURL;/plugin/&name;.plg">
@@ -17,6 +17,10 @@
 
 <CHANGES>
 ##&name;
+###2022.09.27
+###2022.09.27
+###2022.09.27
+-update net-snmp package to net-snmp-5.9.3-x86_64-1_slack15.0.txz
 ###2022.03.20
 -fix for filetree top level
 -update nut footer
@@ -166,9 +170,9 @@ The 'nut-package' file.
 <MD5>24702ef930855db3432ed9ee73e93d42</MD5>
 </FILE>
 
-<FILE Name="&plgPATH;/net-snmp-5.7.3-x86_64-4.txz" Min="6.1" Run="upgradepkg --install-new">
-<URL>&pkgURL;/net-snmp-5.7.3-x86_64-4.txz</URL>
-<MD5>b9ef68216b97cb5f0bcd9f3312e5941e</MD5>
+<FILE Name="&plgPATH;/net-snmp-5.9.3-x86_64-1_slack15.0.txz" Min="6.1" Run="upgradepkg --install-new">
+<URL>&pkgURL;/net-snmp-5.9.3-x86_64-1_slack15.0.txz</URL>
+<MD5>5beebc819894c94bedbc531d47cfe497</MD5>
 </FILE>
 
 <!--
