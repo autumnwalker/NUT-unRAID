@@ -1,15 +1,18 @@
+NOTE: I am not a developer. I have cobbled this together based on the notes below from dmacias72. I'll do my best to keep this running.
+================
+
 unRAID Nut Plugin
 ================
 
 These are notes more for my memory or for anyone who wants to make unRAID plugins using this structure
 
-I manage this on my laptop running Linux Mint Mate
+I manage this with Ubuntu 22.04 as my "dev box".
 
-I use Sublime Text as an editor and SmarGit to upload to github
+I use VS Code as an editor with git plugin to upload to github
 
-copy tar-1.13 from unRAID to /bin/tar-1.13 on laptop
+copy tar-1.13 from unRAID to /bin/tar-1.13 on dev box.
 
-copy makepkg from unRAID to /sbin/makepkg on laptop
+copy makepkg from unRAID to /sbin/makepkg on dev box.
 
 I modified gfjardim's pkg_build.sh to take an argument, add -plugin to name and add arch type, plus modified the lettering function
 
@@ -22,6 +25,3 @@ This creates a slackware compliant package and md5 in the archive directory with
 And adds the date to the plugin file in plugins directory.
 
 e.g. nut-plugin-2017.06.09-x86_64-1.txz and nut-plugin-2016.06.09-x86_64-1.md5
-
-
-[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BKQJF5NVA5E3S)
